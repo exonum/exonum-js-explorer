@@ -1,0 +1,50 @@
+{
+  "name": "exonum-explorer-react",
+  "version": "0.0.2",
+  "description": "Exonum explorer react library",
+  "main": "dist/exonum-explorer-react.umd.js",
+  "module": "dist/exonum-explorer-react.cjs.js",
+  "typings": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exonum/exonum-js-explorer.git"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "build": "rollup -c rollup.config.ts",
+    "start": "rollup -c rollup.config.ts -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "Exonum Team <exonum@bitfury.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@testing-library/react": "^9.3.2",
+    "@types/jest": "^24.0.23",
+    "@types/react": "^16.9.11",
+    "@types/react-test-renderer": "^16.9.1",
+    "jest": "^24.9.0",
+    "jest-websocket-mock": "^2.0.0",
+    "mock-socket": "^9.0.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-test-renderer": "^16.11.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-tslint": "^0.2.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.1",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.7.2",
+    "xhr-mock": "^2.5.1"
+  },
+  "dependencies": {
+    "exonum-explorer": "0.0.2"
+  }
+}
