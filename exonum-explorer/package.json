@@ -1,0 +1,35 @@
+{
+  "name": "exonum-explorer",
+  "version": "0.0.2",
+  "description": "Exonum explorer provider library",
+  "main": "dist/exonum-explorer.umd.js",
+  "module": "dist/exonum-explorer.es5.js",
+  "typings": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exonum/exonum-js-explorer.git"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "rollup -c rollup.config.ts",
+    "start": "rollup -c rollup.config.ts -w"
+  },
+  "author": "Exonum Team <exonum@bitfury.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@egjs/component": "^2.1.2",
+    "unfetch": "^4.1.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.26.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-tslint": "^0.2.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "tslint": "^5.20.1",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.7.2"
+  }
+}
